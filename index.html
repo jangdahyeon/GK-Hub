@@ -17,21 +17,19 @@
       line-height: 1.7;
     }
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
+    .container { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 0 20px; 
     }
-
     header {
-      padding: 25px 0;
+      padding: 30px 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
     .logo {
-      font-size: 26px;
+      font-size: 28px;
       font-weight: 900;
       letter-spacing: -1px;
       background: linear-gradient(90deg, #4a9eff, #7b5eff);
@@ -41,18 +39,15 @@
 
     .hero {
       text-align: center;
-      padding: 120px 0 100px;
+      padding: 160px 0 120px;
     }
-
     .hero h1 {
-      font-size: 3.8rem;
+      font-size: 4.5rem;
       font-weight: 900;
-      margin-bottom: 16px;
-      line-height: 1.1;
+      margin-bottom: 20px;
     }
-
     .hero p {
-      font-size: 1.25rem;
+      font-size: 1.4rem;
       color: #a0a0cc;
       max-width: 620px;
       margin: 0 auto 40px;
@@ -62,26 +57,24 @@
       background: #111118;
       border: 2px solid #4a9eff;
       border-radius: 18px;
-      padding: 28px 24px;
+      padding: 30px 40px;
       display: inline-block;
       box-shadow: 0 0 50px rgba(74, 158, 255, 0.25);
       width: 100%;
-      max-width: 520px;
+      max-width: 560px;
     }
-
     .loadstring {
       font-family: monospace;
-      font-size: 1.05rem;
+      font-size: 1.2rem;
       color: #9cc0ff;
       background: #1a1a22;
-      padding: 16px 18px;
+      padding: 16px 20px;
       border-radius: 12px;
       margin-bottom: 20px;
       text-align: left;
       overflow-x: auto;
       white-space: nowrap;
     }
-
     .copy-btn {
       background: linear-gradient(90deg, #4a9eff, #6b5eff);
       color: white;
@@ -95,7 +88,6 @@
       width: 100%;
       max-width: 320px;
     }
-
     .copy-btn:hover {
       transform: scale(1.05);
       box-shadow: 0 10px 30px rgba(74, 158, 255, 0.4);
@@ -105,48 +97,42 @@
       padding: 100px 0;
       background: #111118;
     }
-
     .section-title {
       text-align: center;
-      font-size: 2.6rem;
+      font-size: 2.8rem;
       font-weight: 700;
-      margin-bottom: 60px;
+      margin-bottom: 70px;
     }
-
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 24px;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
     }
-
     .feature-card {
       background: #1a1a22;
-      padding: 32px;
+      padding: 35px;
       border-radius: 18px;
       border: 1px solid #2a2a38;
       transition: 0.4s;
     }
-
     .feature-card:hover {
       border-color: #4a9eff;
-      transform: translateY(-8px);
+      transform: translateY(-10px);
     }
 
     footer {
       text-align: center;
-      padding: 80px 0 60px;
+      padding: 80px 0;
       color: #666;
       border-top: 1px solid #222;
       font-size: 0.95rem;
     }
-
     .footer-links a {
       color: #888;
-      margin: 0 12px;
+      margin: 0 15px;
       text-decoration: none;
       transition: 0.3s;
     }
-
     .footer-links a:hover {
       color: #4a9eff;
     }
@@ -156,63 +142,68 @@
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background: rgba(0,0,0,0.95);
+      background: rgba(0,0,0,0.9);
       z-index: 1000;
       align-items: center;
       justify-content: center;
       padding: 20px;
     }
-
     .modal-content {
       background: #111118;
       width: 100%;
-      max-width: 680px;
-      max-height: 90vh;
+      max-width: 720px;
+      max-height: 85vh;
       overflow-y: auto;
       border-radius: 18px;
-      padding: 35px;
+      padding: 40px;
       border: 1px solid #333;
     }
 
     @media (max-width: 768px) {
       .hero {
-        padding: 90px 0 80px;
+        padding: 100px 0 80px;
       }
+      .hero h1 {
+        font-size: 3.4rem;
+      }
+      .hero p {
+        font-size: 1.25rem;
+      }
+      .loadstring-box {
+        padding: 25px 20px;
+        max-width: 100%;
+      }
+      .loadstring {
+        font-size: 1.05rem;
+        padding: 14px 16px;
+      }
+      .section-title {
+        font-size: 2.4rem;
+        margin-bottom: 50px;
+      }
+      .feature-card {
+        padding: 28px;
+      }
+      .features-grid {
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 480px) {
       .hero h1 {
         font-size: 2.9rem;
       }
       .hero p {
         font-size: 1.15rem;
       }
-      .loadstring-box {
-        padding: 24px 18px;
-        max-width: 100%;
-      }
-      .loadstring {
-        font-size: 0.98rem;
-        padding: 14px 16px;
-      }
-      .section-title {
-        font-size: 2.2rem;
-        margin-bottom: 50px;
-      }
-      .feature-card {
-        padding: 26px;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 2.55rem;
-      }
       .copy-btn {
-        padding: 15px 30px;
+        padding: 14px 32px;
         font-size: 1.05rem;
       }
     }
 
     .modal-content::-webkit-scrollbar {
-      width: 6px;
+      width: 8px;
     }
     .modal-content::-webkit-scrollbar-thumb {
       background: #4a9eff;
@@ -230,7 +221,7 @@
     <div class="hero">
       <h1>GK Hub</h1>
       <p>The cleanest and most powerful Roblox script hub</p>
-  
+   
       <div class="loadstring-box">
         <div class="loadstring">loadstring(game:HttpGet("https://pastefy.app/RLwFJEJt/raw", true))()</div>
         <button class="copy-btn" onclick="copyLoadstring()">Copy Loadstring</button>
@@ -278,7 +269,6 @@
     </footer>
   </div>
 
-  <!-- Terms of Service Modal -->
   <div id="termsModal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -286,32 +276,24 @@
         <span class="close-btn" onclick="hideTerms()">×</span>
       </div>
       <p><strong>Last Updated:</strong> May 25, 2026</p>
-      
       <h3>1. Acceptance of Terms</h3>
       <p>By accessing or using GK Hub, you agree to be bound by these Terms of Service. If you do not agree, you must not use the script.</p>
-      
       <h3>2. Disclaimer & No Warranty</h3>
       <p>GK Hub is provided "as is" and "as available". We make no warranties of any kind. We are not responsible for any account bans, game violations, data loss, or any other damages resulting from the use of this script.</p>
-      
       <h3>3. Usage Restrictions</h3>
       <p>You may use GK Hub only for personal, non-commercial purposes. You agree not to use it to gain unfair advantages in games that explicitly prohibit such tools. You are solely responsible for any consequences of using this script.</p>
-      
       <h3>4. No Malware or Malicious Intent</h3>
       <p>GK Hub does not contain viruses, stealers, or keyloggers. However, we cannot guarantee the safety when used with third-party executors or injectors.</p>
-      
       <h3>5. Updates and Modifications</h3>
       <p>We reserve the right to modify, update, or discontinue GK Hub at any time without notice. We may also update these Terms at our discretion.</p>
-      
       <h3>6. Termination</h3>
       <p>We may terminate or suspend your access to GK Hub at any time, without notice, for any reason.</p>
-      
       <p style="margin-top: 30px; color: #777; font-size: 0.9rem;">
         By using GK Hub, you acknowledge that you understand and accept all risks involved.
       </p>
     </div>
   </div>
 
-  <!-- Privacy Policy Modal -->
   <div id="privacyModal" class="modal">
     <div class="modal-content">
       <div class="modal-header">
@@ -319,19 +301,14 @@
         <span class="close-btn" onclick="hidePrivacy()">×</span>
       </div>
       <p><strong>Last Updated:</strong> May 25, 2026</p>
-      
       <h3>1. Information We Collect</h3>
       <p>GK Hub does not collect, store, or transmit any personal information from your device. The script runs locally on your Roblox client.</p>
-      
       <h3>2. Data Usage</h3>
       <p>No data is sent to our servers. We do not track your activity, IP address, or Roblox account information.</p>
-      
       <h3>3. Third-Party Services</h3>
       <p>GK Hub uses Pastefy to host the script. We are not responsible for Pastefy's privacy practices.</p>
-      
       <h3>4. Changes to Privacy Policy</h3>
       <p>We may update this Privacy Policy from time to time. Continued use of GK Hub after changes constitutes acceptance of the new policy.</p>
-      
       <p style="margin-top: 30px; color: #777; font-size: 0.9rem;">
         If you have any questions, please feel free to contact us via our official email: <strong>gkhub.roblox@gmail.com</strong>
       </p>
@@ -346,7 +323,6 @@
         const original = btn.textContent;
         btn.textContent = 'Copied Successfully!';
         btn.style.background = '#22c55e';
-        
         setTimeout(() => {
           btn.textContent = original;
           btn.style.background = '';
@@ -354,18 +330,10 @@
       });
     }
 
-    function showTerms() {
-      document.getElementById('termsModal').style.display = 'flex';
-    }
-    function hideTerms() {
-      document.getElementById('termsModal').style.display = 'none';
-    }
-    function showPrivacy() {
-      document.getElementById('privacyModal').style.display = 'flex';
-    }
-    function hidePrivacy() {
-      document.getElementById('privacyModal').style.display = 'none';
-    }
+    function showTerms() { document.getElementById('termsModal').style.display = 'flex'; }
+    function hideTerms() { document.getElementById('termsModal').style.display = 'none'; }
+    function showPrivacy() { document.getElementById('privacyModal').style.display = 'flex'; }
+    function hidePrivacy() { document.getElementById('privacyModal').style.display = 'none'; }
 
     window.onclick = function(event) {
       if (event.target.id === 'termsModal') hideTerms();
